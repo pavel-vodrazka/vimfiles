@@ -16,3 +16,6 @@
 [submodule "bundle/jshint.vim"]
 	path = bundle/jshint.vim
 	url = https://github.com/wookiehangover/jshint.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
