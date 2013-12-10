@@ -22,3 +22,6 @@
 [submodule "bundle/Shareboard"]
 	path = bundle/Shareboard
 	url = https://github.com/pavel-vodrazka/Shareboard.git
+[submodule "bundle/shareboard.vim"]
+	path = bundle/shareboard.vim
+	url = https://github.com/pavel-vodrazka/shareboard.vim.git
