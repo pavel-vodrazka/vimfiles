@@ -7,3 +7,6 @@
 [submodule "bundle/wmgraphviz.vim"]
 	path = bundle/wmgraphviz.vim
 	url = https://github.com/wannesm/wmgraphviz.vim.git
+[submodule "bundle/LargeFile"]
+	path = bundle/LargeFile
+	url = https://github.com/vim-scripts/LargeFile.git
