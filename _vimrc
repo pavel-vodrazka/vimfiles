@@ -115,7 +115,9 @@ augroup END
 let WMGraphviz_viewer="miktex-texworks.exe"
 " Shareboard settings {{{
 let g:shareboard_use_default_mapping = 1
-let g:shareboard_path="c:\\Python27\\Scripts\\shareboard"
+if has("win32")
+	let g:shareboard_path="c:\\Python27\\Scripts\\shareboard"
+endif
 " }}}
 
 " Use xmllint to indent xml files {{{
