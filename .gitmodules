@@ -58,3 +58,9 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/R-Vim-runtime"]
+	path = bundle/R-Vim-runtime
+	url = https://github.com/jalvesaq/R-Vim-runtime.git

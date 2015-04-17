@@ -134,9 +134,23 @@ let $CC = "clang.exe"
 
 " {{{ airline settings
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 " }}}
 
 " {{{ rainbow settings
 let g:rainbow_active = 1
 " }}}
+
+" {{{ syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_enable_r_lintr_checker = 1
+let g:syntastic_r_checkers = 1
+"}}}
