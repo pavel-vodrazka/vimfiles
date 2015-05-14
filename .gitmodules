@@ -64,6 +64,3 @@
 [submodule "bundle/R-Vim-runtime"]
 	path = bundle/R-Vim-runtime
 	url = https://github.com/jalvesaq/R-Vim-runtime.git
-[submodule "bundle/calendar.vim"]
-	path = bundle/calendar.vim
-	url = https://github.com/itchyny/calendar.vim.git
