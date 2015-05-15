@@ -167,4 +167,5 @@ let g:calendar_mruler = 'Led,Úno,Bře,Dub,Kvě,Čvn,Čnc,Srp,Zář,Říj,Lis,Pr
 let g:calendar_wruler = 'Ne Po Út St Čt Pá So'
 let g:calendar_monday = 1
 let g:calendar_weeknm = 5
+let g:calendar_focus_today = 1
 " }}}
