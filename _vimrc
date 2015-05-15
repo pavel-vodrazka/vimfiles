@@ -3,7 +3,11 @@ source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
 "set guifont=Lucida\ Console:h10:cDEFAULT
-set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cDEFAULT
+if has("gui_gtk2")
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+elseif has("gui_w32")
+	set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cDEFAULT
+endif
 set t_Co=256
 colorscheme ansi_blows
 set number
@@ -26,7 +30,7 @@ endif
 " Pathogen {{{
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-call pathogen#helptags() " generate helptags for everything in ‘runtimepath’
+call pathogen#helptags() " generate helptags for everything in â€˜runtimepathâ€™
 syntax on
 filetype plugin indent on
 " }}}
@@ -64,42 +68,42 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
-noremap ìì @
-noremap ššš #
-noremap èè $
-noremap øø %
-noremap  ^
-noremap ıı &
-noremap áá *
-noremap íí (
-noremap éé )
-noremap úú {
-noremap ùù :
-inoremap ìì @
-inoremap ššš #
-inoremap èè $
-inoremap øø %
-inoremap  ^
-inoremap ıı &
-inoremap áá *
-inoremap íí (
-inoremap éé )
-inoremap úú {
-inoremap ùù ;
-inoremap §§ '
-" uloení aktuálnì editovaného souboru
+noremap Ä›Ä› @
+noremap Å¡Å¡Å¡ #
+noremap ÄÄ $
+noremap Å™Å™ %
+noremap Å¾Å¾ ^
+noremap Ã½Ã½ &
+noremap Ã¡Ã¡ *
+noremap Ã­Ã­ (
+noremap Ã©Ã© )
+noremap ÃºÃº {
+noremap Å¯Å¯ :
+inoremap Ä›Ä› @
+inoremap Å¡Å¡Å¡ #
+inoremap ÄÄ $
+inoremap Å™Å™ %
+inoremap Å¾Å¾ ^
+inoremap Ã½Ã½ &
+inoremap Ã¡Ã¡ *
+inoremap Ã­Ã­ (
+inoremap Ã©Ã© )
+inoremap ÃºÃº {
+inoremap Å¯Å¯ ;
+inoremap Â§Â§ '
+" uloÅ¾enÃ­ aktuÃ¡lnÄ› editovanÃ©ho souboru
 map <F2> :w<CR>
-" skok na pøedchozí chybové hlášení
+" skok na pÅ™edchozÃ­ chybovÃ© hlÃ¡Å¡enÃ­
 map <F3> :cp<CR>
-" skok na následujíící chybové hlášení
+" skok na nÃ¡sledujÃ­cÃ­ chybovÃ© hlÃ¡Å¡enÃ­
 map <F4> :cn<CR>
-" uloení aktuálnì editovaného souboru a spuštìní pøekladu
+" uloÅ¾enÃ­ aktuÃ¡lnÄ› editovanÃ©ho souboru a spuÅ¡tÄ›nÃ­ pÅ™ekladu
 map <F9> :w<CR>:make<CR>
-" vıpis všech chybovıch hlášení pøekladaèe
+" vÃ½pis vÅ¡ech chybovÃ½ch hlÃ¡Å¡enÃ­ pÅ™ekladaÄe
 map <F10> :cl<CR><CR>
-" otevøení netrw
+" otevÅ™enÃ­ netrw
 map <F11> :Explore<CR>
-" otevøení NERDtree
+" otevÅ™enÃ­ NERDtree
 map <F12> :NERDTree<CR>
 
 
@@ -156,9 +160,9 @@ let g:syntastic_r_checkers = 1
 "}}}
 
 " {{{ Calendar settings
-let g:calendar_navi_label = 'Minulı,Tento,Pøíští'
-let g:calendar_mruler = 'Led,Úno,Bøe,Dub,Kvì,Èvn,Ènc,Srp,Záø,Øíj,Lis,Pro'
-let g:calendar_wruler = 'Ne Po Út St Èt Pá So'
+let g:calendar_navi_label = 'MinulÃ½,Tento,PÅ™Ã­Å¡tÃ­'
+let g:calendar_mruler = 'Led,Ãšno,BÅ™e,Dub,KvÄ›,ÄŒvn,ÄŒnc,Srp,ZÃ¡Å™,Å˜Ã­j,Lis,Pro'
+let g:calendar_wruler = 'Ne Po Ãšt St ÄŒt PÃ¡ So'
 let g:calendar_monday = 1
 let g:calendar_weeknm = 5
 " }}}
