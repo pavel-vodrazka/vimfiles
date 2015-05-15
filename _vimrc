@@ -154,3 +154,11 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_r_lintr_checker = 1
 let g:syntastic_r_checkers = 1
 "}}}
+
+" {{{ Calendar settings
+let g:calendar_navi_label = 'Minulý,Tento,Příští'
+let g:calendar_mruler = 'Led,Úno,Bře,Dub,Kvě,Čvn,Čnc,Srp,Zář,Říj,Lis,Pro'
+let g:calendar_wruler = 'Ne Po Út St Čt Pá So'
+let g:calendar_monday = 1
+let g:calendar_weeknm = 5
+" }}}
