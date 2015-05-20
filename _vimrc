@@ -1,13 +1,14 @@
+scriptencoding utf-8
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
 "set guifont=Lucida\ Console:h10:cDEFAULT
 if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-  elseif has("gui_w32")
+  if has("gui_win32")
     set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cDEFAULT
+  elseif has("gui_gtk2")
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
   endif
 endif
 set t_Co=256
@@ -71,6 +72,7 @@ nnoremap <right> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 noremap ěě @
+noremap ?? @
 noremap ššš #
 noremap čč $
 noremap řř %
@@ -167,4 +169,5 @@ let g:calendar_mruler = 'Led,Úno,Bře,Dub,Kvě,Čvn,Čnc,Srp,Zář,Říj,Lis,Pr
 let g:calendar_wruler = 'Ne Po Út St Čt Pá So'
 let g:calendar_monday = 1
 let g:calendar_weeknm = 5
+let g:calendar_focus_today = 1
 " }}}
