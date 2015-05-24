@@ -5,11 +5,14 @@ source $VIMRUNTIME/vimrc_example.vim
 "behave mswin
 "set guifont=Lucida\ Console:h10:cDEFAULT
 if has("gui_win32")
-       set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cDEFAULT
-       set printfont=DejaVu_Sans_Mono_for_Powerline:h10:cDEFAULT
+  set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cDEFAULT
 elseif has("gui_gtk2")
-	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-	set printfont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+endif
+if has("win32")
+  set printfont=DejaVu_Sans_Mono_for_Powerline:h10:cDEFAULT
+elseif has("unix")
+  set printfont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 endif
 set t_Co=256
 colorscheme ansi_blows
@@ -121,10 +124,11 @@ augroup END
 " }}}
 
 let WMGraphviz_viewer="miktex-texworks.exe"
+
 " Shareboard settings {{{
 let g:shareboard_use_default_mapping = 1
 if has("win32")
-	let g:shareboard_path="c:\\Python27\\Scripts\\shareboard"
+  let g:shareboard_path="c:\\Python27\\Scripts\\shareboard"
 endif
 " }}}
 
