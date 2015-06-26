@@ -137,11 +137,15 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 " }}}
 
 " {{{ c.vim settings
-let g:C_CCompiler = "clang.exe"
-"let g:C_CCompiler = "c:/MinGW/bin/gcc.exe"
-let g:C_CFlags = "-std=gnu11 -Wall -g -O3 -c"
-let g:C_LFlags = "-std=gnu11 -Wall -g -O3"
-let $CC = "clang.exe"
+if has("win32")
+  let g:C_CCompiler = "c:/MinGW/bin/gcc.exe"
+  let $CC = "gcc.exe"
+elseif has("unix")
+  let g:C_CCompiler = "gcc"
+  let $CC = "gcc"
+endif
+let g:C_CFlags = "-std=gnu11 -Wall -g -O0 -c"
+let g:C_LFlags = "-std=gnu11 -Wall -g -O0"
 " }}}
 
 " {{{ airline settings
