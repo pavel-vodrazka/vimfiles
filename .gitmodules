@@ -64,3 +64,6 @@
 [submodule "bundle/R-Vim-runtime"]
 	path = bundle/R-Vim-runtime
 	url = https://github.com/jalvesaq/R-Vim-runtime.git
+[submodule "bundle/VimBlog"]
+	path = bundle/VimBlog
+	url = https://github.com/danielmiessler/VimBlog.git

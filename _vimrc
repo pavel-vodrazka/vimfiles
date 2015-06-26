@@ -98,6 +98,7 @@ inoremap éé )
 inoremap úú {
 inoremap ůů ;
 inoremap §§ '
+inoremap ... …
 " uložení aktuálně editovaného souboru
 map <F2> :w<CR>
 " skok na předchozí chybové hlášení
