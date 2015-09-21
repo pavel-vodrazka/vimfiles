@@ -139,7 +139,7 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 " {{{ c.vim settings
 if has("win32")
-  let g:C_CCompiler = "c:/MinGW/bin/gcc.exe"
+  let g:C_CCompiler = "gcc.exe"
   let $CC = "gcc.exe"
 elseif has("unix")
   let g:C_CCompiler = "gcc"

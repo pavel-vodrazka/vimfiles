@@ -7,9 +7,6 @@
 [submodule "bundle/wmgraphviz.vim"]
 	path = bundle/wmgraphviz.vim
 	url = https://github.com/wannesm/wmgraphviz.vim.git
-[submodule "bundle/LargeFile"]
-	path = bundle/LargeFile
-	url = https://github.com/vim-scripts/LargeFile.git
 [submodule "bundle/vim-pandoc"]
 	path = bundle/vim-pandoc
 	url = https://github.com/vim-pandoc/vim-pandoc.git
@@ -22,9 +19,6 @@
 [submodule "bundle/shareboard.vim"]
 	path = bundle/shareboard.vim
 	url = https://github.com/pavel-vodrazka/shareboard.vim.git
-[submodule "bundle/snipmate.vim"]
-	path = bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
