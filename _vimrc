@@ -98,7 +98,6 @@ inoremap éé )
 inoremap úú {
 inoremap ůů ;
 inoremap §§ '
-inoremap ... …
 " uložení aktuálně editovaného souboru
 map <F2> :w<CR>
 " skok na předchozí chybové hlášení
@@ -134,7 +133,7 @@ endif
 " }}}
 
 " Use xmllint to indent xml files {{{
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
 " }}}
 
 " {{{ c.vim settings
