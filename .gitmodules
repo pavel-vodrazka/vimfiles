@@ -61,3 +61,6 @@
 [submodule "bundle/VimBlog"]
 	path = bundle/VimBlog
 	url = https://github.com/danielmiessler/VimBlog.git
+[submodule "bundle/snipmate.vim"]
+	path = bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
