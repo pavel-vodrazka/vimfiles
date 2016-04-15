@@ -179,3 +179,9 @@ let g:calendar_monday = 1
 let g:calendar_weeknm = 5
 let g:calendar_focus_today = 1
 " }}}
+
+" lilypond
+filetype off
+set runtimepath+=C:\\Program\ Files\ (x86)\\LilyPond\\usr\\share\\lilypond\\current\\vim
+filetype on
+syntax on
