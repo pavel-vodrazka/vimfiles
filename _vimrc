@@ -3,6 +3,8 @@ set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
+set nobackup
+set writebackup
 "set guifont=Lucida\ Console:h10:cDEFAULT
 if has("gui_win32")
   set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cDEFAULT
@@ -14,8 +16,12 @@ if has("win32")
 elseif has("unix")
   set printfont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 endif
-set t_Co=256
-colorscheme ansi_blows
+if has("gui_running") || &term == "xterm-256color"
+	set t_Co=256
+	colorscheme Chasing_Logic
+else
+	colorscheme default
+endif
 set number
 set wildmenu
 set wildmode=list:longest,full
@@ -129,11 +135,14 @@ let WMGraphviz_viewer="miktex-texworks.exe"
 let g:shareboard_use_default_mapping = 1
 if has("win32")
   let g:shareboard_path="c:\\Python27\\Scripts\\shareboard"
+elseif has("unix")
+  let g:shareboard_path="/c/Python27/Scripts/shareboard"
 endif
+let g:shareboard_command = "pandoc -f markdown+smart+yaml_metadata_block -t html -m -s"
 " }}}
 
 " Use xmllint to indent xml files {{{
-au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
+au FileType xml exe ":silent %!xmllint --format --recover - 2>nul"
 " }}}
 
 " {{{ c.vim settings
