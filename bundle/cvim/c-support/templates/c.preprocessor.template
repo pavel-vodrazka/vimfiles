@@ -63,9 +63,9 @@
 == Preprocessor.ifdef-else-endif == map:pid, shortcut:f ==
 #ifdef  |?CONDITION:u|
 <CURSOR><SPLIT>
-#else      /* -----  not |CONDITION|  ----- */
+#else
 <+ELSE PART+>
-#endif     /* -----  not |CONDITION|  ----- */
+#endif     /* |CONDITION| */
 §-------------------------------------------------------------------------
 == Preprocessor.ifndef-else-endif == map:pin, shortcut:n ==
 #ifndef  |?CONDITION:u|
@@ -75,10 +75,10 @@
 #endif     /* -----  not |CONDITION|  ----- */
 §-------------------------------------------------------------------------
 == Preprocessor.ifndef-def-endif == map:pind, shortcut:e ==
-#ifndef  |?BASENAME:L|_INC
-#define  |BASENAME|_INC
+#ifndef  |BASENAME:u|_H
+#define  |BASENAME:u|_H
 <CURSOR><SPLIT>
-#endif   /* ----- #ifndef |BASENAME|_INC  ----- */
+#endif   /* |BASENAME:u|_H */
 §-------------------------------------------------------------------------
 == Preprocessor.error == map:pe, shortcut:o ==
 #error	"<CURSOR>"			/*  */

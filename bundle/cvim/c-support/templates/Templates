@@ -2,13 +2,13 @@
 §  User Macros
 § ==========================================================
 
-SetMacro( 'AUTHOR',      'YOUR NAME' )
-SetMacro( 'AUTHORREF',   '' )
+SetMacro( 'AUTHOR',      'Pavel Vodrážka' )
+SetMacro( 'AUTHORREF',   'PaVo' )
 SetMacro( 'COMPANY',     '' )
-SetMacro( 'COPYRIGHT',   '' )
-SetMacro( 'EMAIL',       '' )
-SetMacro( 'LICENSE',     '' )
-SetMacro( 'ORGANIZATION','' )
+SetMacro( 'COPYRIGHT',   'Copyright (c) |YEAR| |AUTHOR|' )
+SetMacro( 'EMAIL',       'vodrazka@svujihlava.cz' )
+SetMacro( 'LICENSE',     'MIT' )
+SetMacro( 'ORGANIZATION','Státní veterinární ústav Jihlava' )
 
 SetStyle( 'C' )
 
