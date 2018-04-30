@@ -16,7 +16,7 @@ if has("win32")
 elseif has("unix")
   set printfont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 endif
-if has("gui_running") || &term == "xterm-256color"
+if has("gui_running") || &term == "xterm-256color" || &term == "screen"
 	set t_Co=256
 	colorscheme Chasing_Logic
 else
@@ -189,8 +189,16 @@ let g:calendar_weeknm = 5
 let g:calendar_focus_today = 1
 " }}}
 
-" lilypond
+" {{{ lilypond
 filetype off
 set runtimepath+=C:\\Program\ Files\ (x86)\\LilyPond\\usr\\share\\lilypond\\current\\vim
 filetype on
 syntax on
+" }}}
+
+" {{{ latex-suite
+filetype plugin on
+set shellslash
+filetype indent on
+let g:tex_flavor='latex'
+" }}}
