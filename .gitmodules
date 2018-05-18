@@ -97,3 +97,6 @@
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = https://github.com/vim-latex/vim-latex.git
+[submodule "pack/R/start/Nvim-R"]
+	path = pack/R/start/Nvim-R
+	url = https://github.com/jalvesaq/Nvim-R.git

@@ -202,3 +202,7 @@ set shellslash
 filetype indent on
 let g:tex_flavor='latex'
 " }}}
+
+" {{{ Nvim-r
+let R_pdfviewer="sumatraPDF.exe"
+" }}}
