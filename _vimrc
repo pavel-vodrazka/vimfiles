@@ -196,11 +196,13 @@ filetype on
 syntax on
 " }}}
 
-" {{{ latex-suite
-filetype plugin on
-set shellslash
-filetype indent on
-let g:tex_flavor='latex'
+"{{{ LatexBox
+	filetype plugin on
+	set shellslash
+	filetype indent on
+	let g:LatexBox_latexmk_options = '-pdfxe'
+        let g:LatexBox_viewer = 'SumatraPDF'
+	let g:LatexBox_latexmk_preview_continuously=1
 " }}}
 
 " {{{ Nvim-r
