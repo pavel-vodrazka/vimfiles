@@ -119,6 +119,13 @@ map <F11> :Explore<CR>
 " otevření NERDtree
 map <F12> :NERDTree<CR>
 
+"http://vim.wikia.com/wiki/Converting_tabs_to_spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+autocmd FileType make setlocal noexpandtab
+inoremap <S-Tab> <C-V><Tab>
 
 " }}}
 
