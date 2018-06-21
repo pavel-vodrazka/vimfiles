@@ -92,7 +92,7 @@
 	path = bundle/vim-textobj-xmlattr
 	url = https://github.com/whatyouhide/vim-textobj-xmlattr
 [submodule "bundle/LaTeX-Box"]
-	path = bundle/LaTeX-Box
+	path = bundle-deactivated/LaTeX-Box
 	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
 [submodule "bundle/vim-latex"]
 	path = bundle-deactivated/vim-latex
@@ -100,3 +100,6 @@
 [submodule "pack/R/start/Nvim-R"]
 	path = pack/R/start/Nvim-R
 	url = https://github.com/jalvesaq/Nvim-R.git
+[submodule "bundle/vimtex"]
+	path = bundle/vimtex
+	url = https://github.com/lervag/vimtex.git

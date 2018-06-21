@@ -207,9 +207,11 @@ syntax on
 	filetype plugin on
 	set shellslash
 	filetype indent on
-	let g:LatexBox_latexmk_options = '-pdfxe'
-        let g:LatexBox_viewer = 'SumatraPDF'
-	let g:LatexBox_latexmk_preview_continuously=1
+	let g:LatexBox_latexmk_options = '-pdflua'
+    let g:LatexBox_viewer = 'SumatraPDF'
+	let g:LatexBox_latexmk_preview_continuously = 1
+    let g:LatexBox_quickfix = 1
+    let g:LatexBox_show_warnings = 1
 " }}}
 
 " {{{ Nvim-r
