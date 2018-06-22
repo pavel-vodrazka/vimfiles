@@ -214,6 +214,38 @@ syntax on
     let g:LatexBox_show_warnings = 1
 " }}}
 
+" {{{ vimtex
+let g:vimtex_compiler_engines = {
+    \ '_'                : '-pdf',
+    \ 'pdflatex'         : '-pdf',
+    \ 'lualatex'         : '-lualatex',
+    \ 'xelatex'          : '-xelatex',
+    \ 'context (pdftex)' : '-pdf -pdflatex=texexec',
+    \ 'context (luatex)' : '-pdf -pdflatex=context',
+    \ 'context (xetex)'  : '-pdf -pdflatex=''texexec --xtx''',
+    \ 'pdflua'           : '-pdflua',
+    \}
+
+let g:vimtex_view_general_viewer = 'SumatraPDF'
+let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
+let g:vimtex_view_general_options_latexmk = '-reuse-instance'
+let g:vimtex_compiler_latexmk = {
+    \ 'backend' : 'jobs',
+    \ 'background' : 1,
+    \ 'build_dir' : '',
+    \ 'callback' : 0,
+    \ 'compiler' : '',
+    \ 'continuous' : 1,
+    \ 'executable' : 'latexmk',
+    \ 'options' : [
+    \ '-verbose',
+    \ '-file-line-error',
+    \ '-synctex=1',
+    \ '-interaction=nonstopmode',
+    \ ],
+    \}
+" }}}
+
 " {{{ Nvim-r
 let R_pdfviewer="sumatraPDF.exe"
 " }}}
