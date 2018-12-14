@@ -16,7 +16,7 @@ if has("win32")
 elseif has("unix")
   set printfont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 endif
-if has("gui_running") || &term == "xterm-256color" || &term == "screen"
+if has("gui_running") || &term == "xterm-256color" || &term == "screen" || &term == "screen-256color"
 	set t_Co=256
 	colorscheme Chasing_Logic
 else
@@ -137,6 +137,8 @@ augroup END
 " }}}
 
 let WMGraphviz_viewer="miktex-texworks.exe"
+autocmd BufWritePost *.dot,*.gv !dot -Tpdf -o%:r.pdf %
+autocmd BufWritePost *.dot,*.gv !dot -Tsvg -o%:r.svg %
 
 " Shareboard settings {{{
 let g:shareboard_use_default_mapping = 1
