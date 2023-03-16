@@ -103,3 +103,6 @@
 [submodule "bundle/vimtex"]
 	path = bundle-deactivated/vimtex
 	url = https://github.com/lervag/vimtex.git
+[submodule "bundle/plantuml-syntax"]
+	path = bundle/plantuml-syntax
+	url = https://github.com/aklt/plantuml-syntax
