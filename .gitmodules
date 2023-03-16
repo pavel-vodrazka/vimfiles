@@ -109,3 +109,6 @@
 [submodule "bundle/AutoFenc"]
 	path = bundle/AutoFenc
 	url = http://github.com/vim-scripts/AutoFenc
+[submodule "bundle/setcolors"]
+	path = bundle/setcolors
+	url = https://github.com/felixhummel/setcolors.vim
