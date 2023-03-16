@@ -106,3 +106,6 @@
 [submodule "bundle/plantuml-syntax"]
 	path = bundle/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax
+[submodule "bundle/AutoFenc"]
+	path = bundle/AutoFenc
+	url = http://github.com/vim-scripts/AutoFenc
