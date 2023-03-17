@@ -93,7 +93,7 @@
 	url = https://github.com/whatyouhide/vim-textobj-xmlattr
 [submodule "bundle/LaTeX-Box"]
 	path = bundle/LaTeX-Box
-	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
+	url = https://github.com/LaTeX-Box-Team/LaTeX-Box
 [submodule "bundle/vim-latex"]
 	path = bundle-deactivated/vim-latex
 	url = https://github.com/vim-latex/vim-latex.git
@@ -108,7 +108,7 @@
 	url = https://github.com/aklt/plantuml-syntax
 [submodule "bundle/AutoFenc"]
 	path = bundle/AutoFenc
-	url = http://github.com/vim-scripts/AutoFenc
+	url = https://github.com/vim-scripts/AutoFenc
 [submodule "bundle/setcolors"]
 	path = bundle/setcolors
 	url = https://github.com/felixhummel/setcolors.vim
